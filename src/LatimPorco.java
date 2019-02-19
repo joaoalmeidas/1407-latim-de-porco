@@ -17,7 +17,12 @@ public class LatimPorco {
 			frase.replace(".", "");
 		}
 		
-
+		System.out.println("Frase original:");
+		
+		System.out.println(frase.substring(0, 1).toUpperCase() + frase.substring(1) + ".");
+		
+		System.out.printf("%nFrase traduzida para Latim Porco:%n");
+		
 		imprimeLatimPorco(frase);	
 
 		
