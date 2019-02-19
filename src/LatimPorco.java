@@ -97,7 +97,19 @@ public class LatimPorco {
 			
 			tokens[i] = limericks[i].split(" ");
 			
-			System.out.println(tokens[i][0]);
+			for(int j = 0; j < tokens[i].length; j++) {
+				
+				tokens[i][j] = tokens[i][j].toLowerCase();
+				
+				if(tokens[i][j].contains(",") || tokens[i][j].contains(",")) {
+					
+					tokens[i][j] = tokens[i][j].substring(0, tokens[i][j].length() - 1);
+					
+				}
+				
+				System.out.println(tokens[i][j]);
+				
+			}
 			
 		}
 
