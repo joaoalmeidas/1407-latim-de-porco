@@ -13,6 +13,8 @@ public class LatimPorco {
 		
 		String[] limericks = new String[5];
 		String[] rima = new String[5];
+		String[][] tokens = new String[5][];
+		String[] latimporco = new String[5];
 		
 		SecureRandom aleatorio = new SecureRandom();
 		
@@ -86,6 +88,16 @@ public class LatimPorco {
 		for(String verso : limericks) {
 			
 			System.out.println(verso);
+			
+		}
+		
+		
+		
+		for(int i = 0; i < tokens.length; i++) {
+			
+			tokens[i] = limericks[i].split(" ");
+			
+			System.out.println(tokens[i][0]);
 			
 		}
 
